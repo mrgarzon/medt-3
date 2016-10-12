@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -48,6 +47,61 @@
     </div>
   </div>
 </nav>
+
+
+<p id="test1">*****************************************************</p>
+
+<button onclick="myFunction1()">AUSRASTEN!</button>
+<button onclick="myFunction2()">Entspannen...</button>
+
 	
+<div style=margin-top:200px;margin-bottom:100px;float:auto;>
+
+<button onclick="myFunction()">Anzeigen</button>
+<button type="button" onclick="document.getElementById('demo_day').innerHTML = ''">Löschen!</button>
+<p id="demo_day"></p>
+
+</div>
+
+<button type="button"
+onclick="document.getElementById('demo_date').innerHTML = Date()">
+Wd/Monat/Tag/Jahr/Uhrzeit.</button>
+<button type="button" onclick="document.getElementById('demo_date').innerHTML = ''">Löschen!</button>
+
+<p id="demo_date"></p>
+
+<script>
+function myFunction1() {
+    var x = document.getElementById("test1");
+    x.style.fontSize = "25px";
+    x.style.color = "red";
+}
+</script>
+
+<script>
+function myFunction2() {
+    var x = document.getElementById("test1");
+    x.style.fontSize = "14px";
+    x.style.color = "black";
+}
+</script>
+
+<script>
+function myFunction() {
+    var d = new Date();
+    var weekday = new Array(7);
+    weekday[0] = "Sonntag";
+    weekday[1] = "Montag";
+    weekday[2] = "Dienstag";
+    weekday[3] = "Mittwoch";
+    weekday[4] = "Donnerstag";
+    weekday[5] = "Freitag";
+    weekday[6] = "Samstag";
+    var n = weekday[d.getDay()];
+    document.getElementById("demo_day").innerHTML = n;
+}
+</script>
+
+
   </body>
 </html>
