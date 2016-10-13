@@ -51,22 +51,22 @@
 
 <p id="test1">*****************************************************</p>
 
-<button onclick="myFunction1()">AUSRASTEN!</button>
-<button onclick="myFunction2()">Entspannen...</button>
+<button class="btn btn-danger" onclick="myFunction1()">AUSRASTEN!</button>
+<button class="btn btn-success" onclick="myFunction2()">Entspannen...</button>
 
 	
 <div style=margin-top:200px;margin-bottom:100px;float:auto;>
 
-<button onclick="myFunction()">Anzeigen</button>
-<button type="button" onclick="document.getElementById('demo_day').innerHTML = ''">Löschen!</button>
+<button class="btn btn-primary" onclick="myFunction()">Anzeigen</button>
+<button type="button" class="btn btn-danger" onclick="document.getElementById('demo_day').innerHTML = ''">Löschen!</button>
 <p id="demo_day"></p>
 
 </div>
 
-<button type="button"
+<button type="button" class="btn btn-primary"
 onclick="document.getElementById('demo_date').innerHTML = Date()">
 Wd/Monat/Tag/Jahr/Uhrzeit.</button>
-<button type="button" onclick="document.getElementById('demo_date').innerHTML = ''">Löschen!</button>
+<button type="button" class="btn btn-danger"onclick="document.getElementById('demo_date').innerHTML = ''">Löschen!</button>
 
 <p id="demo_date"></p>
 
