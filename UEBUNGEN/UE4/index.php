@@ -6,7 +6,19 @@
 </head>
 
 <body>
-	<h1>Test</h1>
-	<?php echo "Hello World!";?>
+	<h1>Einfache Textausgabe mit echo! </h1>
+	<?php echo "<h1>Hello World1!</h1>";?>
+	<h2>
+	<?php echo "Hello World2!";?>
+	</h2>
+	<h2>
+	<?php echo "Hello";?>
+	<?php echo " world</h2>";?>
+	
+	<h2>
+	<?php echo 'Hello, "world" 3!'; //As it is?>
+	</h2>
+
+	<h1>Textausgabe mit echo und Variablen</h1>
 </body>
 </html>
