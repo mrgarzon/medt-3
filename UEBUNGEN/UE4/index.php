@@ -20,5 +20,11 @@
 	</h2>
 
 	<h1>Textausgabe mit echo und Variablen</h1>
+	
+	<?php
+	$myString1="Hello,";
+	$myString2="world!";
+	$myInt=12;
+	?>
 </body>
 </html>
