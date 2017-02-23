@@ -27,7 +27,7 @@ $pwd = '';
 // Establish & check connection
 try {
    $db = new PDO ( "mysql:host=$host;dbname=$dbname", $user, $pwd);
-   echo "<h1>Connected successfully to database $dbname</h1>";
+   echo "<h1>Du hast es geschafft!!! Du bist in $dbname</h1>";
 } catch (PDOException $e) {
    echo "<h1>Error: " . $e->getMessage()."</h1>";
    die();
@@ -37,7 +37,6 @@ $sql = "SELECT * FROM project";
 $res = $db->query($sql);
 $tmp = $res->fetchAll(PDO::FETCH_OBJ);
 ?>
-<hr>
 <table class="table table-bordered">
   <thead>
     <tr>
